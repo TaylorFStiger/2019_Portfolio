@@ -42,7 +42,7 @@
 		<ul class="menu-list">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
-			
+
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -71,11 +71,12 @@
 				<div class="row">
 					<div class="col-md-7 about-text">
 						<h2>A short story about me.</h2>
-						<p>I am Taylor Stiger. A Texas native and Razorback Alumni, A Full Stack Web Developer with a background in Accounting, Hospitality
-								Management and life-long dedication to learning. Team player with a can-do
-								attitude ,experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase,
-								and Node Js.
-								 </p>
+						<p>I am Taylor Stiger. A Texas native and Razorback Alumni, A Full Stack Web Developer with a
+							background in Accounting, Hospitality
+							Management and life-long dedication to learning. Team player with a can-do
+							attitude ,experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase,
+							and Node Js.
+						</p>
 						<a href="documents/Taylor Stiger Resume 2019.pdf" target="_blank" class="site-btn mt10">Download
 							Resume</a>
 					</div>
@@ -92,8 +93,22 @@
 				<div class="stitle mb40">
 					<h2>Latest Works</h2>
 				</div>
-				
+
 				<div class="row isotope_items">
+
+					<!-- Work item -->
+					<div class="col-md-4 col-sm-6 col-xs-12 ill">
+						<a class="work-item " href="https://github.com/TaylorFStiger/bamazon">
+							<img src="./img/customerbuyingsomething.gif" alt="">
+							<div class="work-inner">
+								<div class="work-info">
+									<h2>bamazon</h2>
+									<h3>bamazon SQL app</h3>
+								</div>
+							</div>
+						</a>
+						<a href="https://github.com/TaylorFStiger/MoodTube">MoodTube Code</a> <br>
+					</div>
 					<!-- Work item -->
 					<div class="col-md-4 col-sm-6 col-xs-12 ill">
 						<a class="work-item " href="https://taylorfstiger.github.io/moodtube">
@@ -102,8 +117,8 @@
 								<div class="work-info">
 									<h2>MoodTube</h2>
 									<h3>MoodTube</h3>
-									</div>								
-							</div>							
+								</div>
+							</div>
 						</a>
 						<a href="https://github.com/TaylorFStiger/MoodTube">MoodTube Code</a> <br>
 					</div>
@@ -135,7 +150,9 @@
 						</a>
 						<a href="https://github.com/TaylorFStiger/FirebaseTrainSched">Train Schedule Code</a>
 					</div>
-					<br><hr><hr>
+					<br>
+					<hr>
+					<hr>
 					<!-- Work item -->
 					<div class="col-md-4 col-sm-6 col-xs-12 fs">
 						<a class="work-item" href="https://taylorfstiger.github.io/GifTastic/">
@@ -149,56 +166,59 @@
 						</a>
 						<a href="https://github.com/TaylorFStiger/GifTastic">GifTastic Code</a>
 					</div>
-					
-		<!-- ==== Contact Section Start ==== -->
-		<section class="contact-section fix" id="contact">
-			<div class="container pt100 pb100">
-				<div class="stitle mb70">
-					<h2>Get in touch</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="row">
-							<!-- Contact Info -->
-							<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.2s">
-								<i class="fa fa-phone"></i>
-								<p> P 972 415 1305<br></p>
+
+					<!-- ==== Contact Section Start ==== -->
+					<section class="contact-section fix" id="contact">
+						<div class="container pt100 pb100">
+							<div class="stitle mb70">
+								<h2>Get in touch</h2>
 							</div>
-							<!-- Contact Info -->
-							<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.4s">
-								<i class="fa fa-map-marker"></i>
-								<p>Dallas, Texas</p>
-							</div>
-							<!-- Contact Info -->
-							<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.6s">
-								<i class="fa fa-send"></i>
-								<a href="mailto: taylorfstiger@gmail.com">taylorfstiger@gmail.com<br></a>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<div class="row">
+										<!-- Contact Info -->
+										<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.2s">
+											<i class="fa fa-phone"></i>
+											<p> P 972 415 1305<br></p>
+										</div>
+										<!-- Contact Info -->
+										<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.4s">
+											<i class="fa fa-map-marker"></i>
+											<p>Dallas, Texas</p>
+										</div>
+										<!-- Contact Info -->
+										<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.6s">
+											<i class="fa fa-send"></i>
+											<a href="mailto: taylorfstiger@gmail.com">taylorfstiger@gmail.com<br></a>
+										</div>
+									</div>
+									<!-- Contact Form -->
+									<form action="mail.php" class="cont-form" id="contact-form" method="POST">
+										<div class="row">
+											<div class="col-sm-6">
+												<input type="text" name="name" id="name" required
+													placeholder="Your Name*">
+											</div>
+											<div class="col-sm-6">
+												<input type="email" name="email" id="email" required
+													placeholder="Your Email*">
+											</div>
+											<div class="col-sm-12">
+												<textarea id="massage" name="massage" required
+													placeholder="Your Message*"></textarea>
+											</div>
+											<div class="text-center">
+												<button type="submit" class="site-btn" data-wow-delay="0.2s"
+													id="send-form">Send
+													Message</button>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-						<!-- Contact Form -->
-						<form action="mail.php" class="cont-form" id="contact-form" method="POST">
-							<div class="row">
-								<div class="col-sm-6">
-									<input type="text" name="name" id="name" required placeholder="Your Name*">
-								</div>
-								<div class="col-sm-6">
-									<input type="email" name="email" id="email" required placeholder="Your Email*">
-								</div>
-								<div class="col-sm-12">
-									<textarea id="massage" name="massage" required
-										placeholder="Your Message*"></textarea>
-								</div>
-								<div class="text-center">
-									<button type="submit" class="site-btn" data-wow-delay="0.2s" id="send-form">Send
-										Message</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ==== Contact Section End ==== -->
+					</section>
+					<!-- ==== Contact Section End ==== -->
 	</main>
 
 
