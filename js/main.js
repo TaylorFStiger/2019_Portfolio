@@ -132,21 +132,20 @@ $(window).on('load', function() {
 	--------------------*/
 	new WOW().init();
 
-
-	/*------------------
+/*------------------
 		CONTACT FORM
 	--------------------*/
 	$('#contact-form').on('submit', function() {
 		var send_btn = $('#send-form'),
 			form = $(this),
 			formdata = $(this).serialize(),
-			check = $('#form-check');
+			chack = $('#form-chack');
 			send_btn.text('Wait...');
 
 		function reset_form(){
 		 	$("#name").val('');
 			$("#email").val('');
-			$("#message").val('');
+			$("#massage").val('');
 		}
 
 		$.ajax({
@@ -160,7 +159,7 @@ $(window).on('load', function() {
 					setTimeout(function() {
 						reset_form();
 						send_btn.removeClass('done');
-						send_btn.text('Message');
+						send_btn.text('Massage');
 					}, 2500);
 				}
 				else {
@@ -169,13 +168,14 @@ $(window).on('load', function() {
 					send_btn.text('Error');
 					setTimeout(function() {
 						send_btn.removeClass('error');
-						send_btn.text('Message');
+						send_btn.text('Massage');
 					}, 5000);
 				}
 			}
 		});
 		return false;
 	});
+
 
 
 })(jQuery);

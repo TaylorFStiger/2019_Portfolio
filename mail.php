@@ -10,9 +10,9 @@
 
 		$name = validata($_POST['name']);
 		$email = validata($_POST['email']);
-		$message = validata($_POST['message']);
+		$massage = validata($_POST['massage']);
 
-		if (isset($name) && isset($email) && isset($message)) {
+		if (isset($name) && isset($email) && isset($massage)) {
 		
 			// Set the recipient email address.
 	        // Type here your email id for receive email.
@@ -24,7 +24,7 @@
 	        // Build the email content.
 	        $email_body = "Name: $name\n";
 	        $email_body .= "Email: $email\n\n";
-	        $email_body .= "Message:\n$message\n";
+	        $email_body .= "Message:\n$massage\n";
 
 	        // Build the email headers.
 	        $email_headers = "From: $name <$email>";
@@ -38,5 +38,3 @@
 			}
 		}
 	}
-
-?>
