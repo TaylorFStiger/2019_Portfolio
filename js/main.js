@@ -134,6 +134,7 @@ $(window).on('load', function() {
 
 /*------------------
 		CONTACT FORM
+		to be used if hosted on a dynamic server (currently hosted on github pages)
 	--------------------*/
 	// $('#contact-form').on('submit', function() {
 	// 	var send_btn = $('#send-form'),
