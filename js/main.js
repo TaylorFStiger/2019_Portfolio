@@ -116,15 +116,15 @@ $(window).on('load', function() {
 
 
 
-	/*------------------
-		MAGNIDIC POPUP
-	--------------------*/
-	$('.work-item').magnificPopup({
-		type: 'image',
-		gallery: { enabled: true },
-		removalDelay: 400,
-		zoom:{enabled: true, duration: 300}
-	});
+	// /*------------------
+	// 	MAGNIDIC POPUP
+	// --------------------*/
+	// $('.work-item').magnificPopup({
+	// 	type: 'image',
+	// 	gallery: { enabled: true },
+	// 	removalDelay: 400,
+	// 	zoom:{enabled: true, duration: 300}
+	// });
 
 
 	/*------------------
